@@ -1,4 +1,4 @@
-// import ParticlesContainer from "../particles/ParticlesContainer";
+import ParticlesContainer from "../particles/ParticlesContainer";
 import { motion } from "framer-motion";
 import "./hero.scss";
 
@@ -52,7 +52,7 @@ const Hero = () => {
 					/>
 				</motion.div>
 			</div>
-			{/* <ParticlesContainer/> */}
+			<ParticlesContainer/>
 			<div className="imageContainer">
 				<img src="/hero1.png" alt="" />
 			</div>

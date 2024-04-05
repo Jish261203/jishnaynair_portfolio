@@ -1,0 +1,52 @@
+.skills{
+    height: 100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+
+    .wrapper {
+    display: flex;
+    flex-direction: column; 
+    gap: 20px; 
+    max-width: 80%; 
+    margin: auto; 
+    text-align: center; 
+    align-items: center; 
+
+
+      .innerskill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    
+      h1 {
+        font-weight: bold;
+        color: white;
+        font-size: 50px; 
+
+        span {
+          background-image: linear-gradient(to right, #8a2be2, #ff0000);
+          -webkit-background-clip: text;
+          background-clip: text; 
+          color: transparent;
+        }
+      }
+
+      p {
+        color: #ccc; 
+        font-size: 20px; 
+      }
+  } 
+
+    .slider{
+    max-width: 90%; 
+    
+  }
+  }
+
+
+}

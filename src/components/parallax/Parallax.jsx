@@ -9,9 +9,10 @@ const Parallax = ({ type }) => {
 		target: ref,
 		offset:["start start","end start"]
 	})
-	const xBg = useTransform(scrollYProgress, [0, 1], ["-35%","25%"])
-	const yBg = useTransform(scrollYProgress, [0, 1], ["10%", "-80%"])
-	const iBg = useTransform(scrollYProgress, [0, 1], ["30%","-50%"]);
+	const xBg = useTransform(scrollYProgress, [0, 1], ["-35%", "25%"]);
+	const yBg = useTransform(scrollYProgress, [0, 1], ["10%", "-100%"]);
+	const iBg = useTransform(scrollYProgress, [0, 1], ["30%", "-50%"]);
+	const yStars=useTransform(scrollYProgress,[0,1],["0%","20%"])
 	
 	let backgroundStyle = {}
 	let imageTransform
@@ -59,7 +60,7 @@ const Parallax = ({ type }) => {
 				/>
 			)}
 			<motion.div className="mountain"></motion.div>
-			<motion.div className="stars"></motion.div>
+			<motion.div style={{ x: yStars }} className="stars"></motion.div>
 		</div>
 	);
 };
