@@ -25,14 +25,16 @@ const variants = {
 const SideBar = () => {
     const [open,setOpen]=useState(false)
 
-  return (
-    <motion.div className="sidebar" animate={open?"open":"closed"}>
-          <motion.div className="bg" variants={variants}>
-              <Links/>
-          </motion.div>
-          <ToggleButton setOpen={setOpen} />
-    </motion.div>
-  )
+    return (
+			// <div className="sidebar-container">
+				<motion.div className="sidebar" animate={open ? "open" : "closed"}>
+					<motion.div className="bg" variants={variants}>
+						<Links />
+					</motion.div>
+					<ToggleButton setOpen={setOpen} />
+				</motion.div>
+			// </div>
+		);
 }
 
 export default SideBar

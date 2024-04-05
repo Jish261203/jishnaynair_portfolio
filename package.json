@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "@babel/traverse": "^7.24.1",
+    "@tsparticles/react": "^3.0.0",
     "framer-motion": "^10.16.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "sass": "^1.68.0"
+    "react-router-dom": "^6.22.3",
+    "sass": "^1.68.0",
+    "tsparticles": "^3.3.0"
   },
   "devDependencies": {
     "@types/react": "18.2.15",

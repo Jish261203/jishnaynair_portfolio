@@ -1,0 +1,65 @@
+.hero {
+	height: calc(100vh - 100px);
+	background: linear-gradient(180deg, #07071c, #281937);
+	overflow: hidden;
+	position: relative;
+
+        .particles-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0.5; // Adjust the opacity as needed
+    }
+
+	.wrapper {
+		max-width: 1366px;
+		height: 100%;
+		margin: auto;
+
+
+		.textContainer {
+			height: 100%;
+            width: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			gap: 40px;
+
+            h2{
+                font-size: 30px;
+                color: #b88bbb;
+                letter-spacing: 10px;
+            }
+
+            h1{
+                font-size: 88px;
+            }
+
+            .buttons{
+                button{
+                    padding: 20px;
+                    border: 1px solid gainsboro;
+                    border-radius: 10px;
+                    background-color: transparent;
+                    color: gray;
+                    margin-right: 20px;
+                    cursor: pointer;
+                    font-weight: 300;
+                }
+            }
+
+			img {
+				width: 50px;
+			}
+		}
+	}
+
+	.imageContainer {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		right: 0;
+	}
+}

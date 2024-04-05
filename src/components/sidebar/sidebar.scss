@@ -1,3 +1,7 @@
+// .sidebar-container {
+//     position: relative;
+//     z-index: 1001; /* Adjust the z-index value as needed */
+// }
 .sidebar{
     display: flex;
     flex-direction: column;
@@ -5,13 +9,14 @@
     justify-content: center;
     background-color: white;
     color: black;
+    
 
     .bg{
         position:fixed;
         top: 0;
         left: 0;
         bottom: 0;
-        width: 400px;
+        width: 300px;
         background: white;
 
         .links{
