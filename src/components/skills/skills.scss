@@ -1,52 +1,66 @@
-.skills{
-    height: 100vh;
-    width:100vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-size: cover;
-    background-position: center;
+// @import "../../app.scss";
 
-    .wrapper {
-    display: flex;
-    flex-direction: column; 
-    gap: 20px; 
-    max-width: 1366px; 
-    margin: auto; 
-    text-align: center; 
-    align-items: center; 
+.skills {
+	height: 100vh;
+	width: 100vw;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-size: cover;
+	background-position: center;
 
+	// @include mobile {
+	// 	padding: 20px;
+	// }
 
-      .innerskill{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    
-      h1 {
-        font-weight: bold;
-        color: white;
-        font-size: 50px; 
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		max-width: 1366px;
+		margin: auto;
+		text-align: center;
+		align-items: center;
 
-        span {
-          background-image: linear-gradient(to right, #8a2be2, #ff0000);
-          -webkit-background-clip: text;
-          background-clip: text; 
-          color: transparent;
-        }
-      }
+		// @include mobile {
+		// 	gap: 10px;
+		// 	max-width: 80%;
+		// }
 
-      p {
-        color: #ccc; 
-        font-size: 20px; 
-      }
-  } 
+		.innerskill {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			gap: 4px;
 
-    .slider{
-    max-width: 1366px; 
-    
-  }
-  }
+			h1 {
+				font-weight: bold;
+				color: white;
+				font-size: 50px;
 
+				// @include mobile {
+				// 	font-size: 40px;
+				// }
 
+				span {
+					background-image: linear-gradient(to right, #8a2be2, #ff0000);
+					-webkit-background-clip: text;
+					background-clip: text;
+					color: transparent;
+				}
+			}
+
+			p {
+				color: #ccc;
+				font-size: 20px;
+				// @include mobile {
+				// 	font-size: 16px;
+				// }
+			}
+		}
+
+		.slider {
+			max-width: 1366px;
+		}
+	}
 }

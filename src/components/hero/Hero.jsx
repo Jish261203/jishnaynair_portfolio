@@ -25,7 +25,9 @@ const textVariants = {
         }
     }
 };
-const Hero = () => {
+
+const Hero = () => {	
+
 	return (
 		<div className="hero">
 			<div className="wrapper">

@@ -15,7 +15,7 @@ const Navbars = () => {
 				</motion.span>
 				<div className="social">
 					<motion.a
-						href="#"
+						href="https://www.linkedin.com/in/jishnay-nair-5aa043244/"
 						whileHover={{ scale: 2, rotate: 360 }}
 						whileTap={{
 							scale: 0.8,

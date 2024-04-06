@@ -11,7 +11,9 @@
   },
   "dependencies": {
     "@babel/traverse": "^7.24.1",
+    "@emailjs/browser": "^4.3.3",
     "@tsparticles/react": "^3.0.0",
+    "dotenv": "^16.4.5",
     "framer-motion": "^10.16.4",
     "react": "18.2.0",
     "react-dom": "18.2.0",
@@ -19,7 +21,8 @@
     "sass": "^1.68.0",
     "swiper": "^11.1.0",
     "swiper-react": "^1.0.0",
-    "tsparticles": "^3.3.0"
+    "tsparticles": "^3.3.0",
+    "vite-plugin-env-compatible": "^2.0.1"
   },
   "devDependencies": {
     "@types/react": "18.2.15",

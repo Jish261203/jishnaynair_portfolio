@@ -1,4 +1,4 @@
-@import "../../app.scss";
+// @import "../../app.scss";
 
 .about {
 	position: relative;
@@ -9,14 +9,13 @@
 	margin-left: 10%;
 	margin-right: 10%;
 
-	@include mobile {
-		background-color: transparent;
-		padding-left: 0;
-		padding-right: 0;
-	}
+	// @include mobile {
+	// 	background-color: transparent;
+	// 	padding-left: 0;
+	// 	padding-right: 0;
+	// }
 
 	h2 {
-		// background-image: linear-gradient(to right, #8a2be2, #ff0000);
 		background-image: linear-gradient(to right, #e27a2b, #ff0051);
 		-webkit-background-clip: text;
 		background-clip: text;
@@ -24,7 +23,7 @@
 		font-size: 45px;
 		font-weight: 700;
 		letter-spacing: 1.75px;
-		text-transform: capitalize;
+	
 		text-align: center;
 	}
 
@@ -33,9 +32,9 @@
 		flex-direction: row;
 		align-items: center;
 
-		@include mobile {
-			flex-direction: column;
-		}
+		// @include mobile {
+		// 	flex-direction: column;
+		// }
 
 		.aboutImage {
 			width: 35%;
@@ -47,9 +46,9 @@
 			flex-direction: column;
 			gap: 50px;
 
-			@include mobile {
-				margin-top: 29px;
-			}
+			// @include mobile {
+			// 	margin-top: 29px;
+			// }
 
 			.aboutList {
 				display: flex;
@@ -68,10 +67,10 @@
 				background-repeat: no-repeat;
 				transition: 0.4s;
 
-				@include mobile {
-					padding-left: 0;
-					padding-right: 0;
-				}
+				// @include mobile {
+				// 	padding-left: 0;
+				// 	padding-right: 0;
+				// }
 
 				img {
 					margin-right: 20px; 
