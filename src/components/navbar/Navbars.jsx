@@ -4,14 +4,13 @@ import { motion } from "framer-motion";
 
 const Navbars = () => {
 	return (
-        <div className="navbar">
-            <SideBar/>
+		<div className="navbar">
+			<SideBar />
 			<div className="wrapper">
 				<motion.span
 					initial={{ opacity: 0, scale: 0.5 }}
 					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.5 }}
-					>
+					transition={{ duration: 0.5 }}>
 					Jishnay Nair
 				</motion.span>
 				<div className="social">
@@ -26,7 +25,7 @@ const Navbars = () => {
 						<img src="/linkedin.png" alt="" />
 					</motion.a>
 					<motion.a
-						href="#"
+						href="https://github.com/Jish261203"
 						whileHover={{ scale: 2, rotate: 360 }}
 						whileTap={{
 							scale: 0.8,

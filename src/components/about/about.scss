@@ -1,0 +1,111 @@
+@import "../../app.scss";
+
+.about {
+	position: relative;
+	border-radius: 15px;
+	padding: 73px;
+	margin-top: 129px;
+	z-index: 1;
+	margin-left: 10%;
+	margin-right: 10%;
+
+	@include mobile {
+		background-color: transparent;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	h2 {
+		// background-image: linear-gradient(to right, #8a2be2, #ff0000);
+		background-image: linear-gradient(to right, #e27a2b, #ff0051);
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		font-size: 45px;
+		font-weight: 700;
+		letter-spacing: 1.75px;
+		text-transform: capitalize;
+		text-align: center;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+
+		@include mobile {
+			flex-direction: column;
+		}
+
+		.aboutImage {
+			width: 35%;
+		}
+
+		.aboutItems {
+			color: rgb(202, 191, 191);
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+
+			@include mobile {
+				margin-top: 29px;
+			}
+
+			.aboutList {
+				display: flex;
+				flex-direction: row;
+				align-items: center;
+				border-radius: 20px;
+				list-style: none;
+				padding: 25px;
+				background-image: linear-gradient(
+					90deg,
+					rgba(165, 215, 232, 0.42) 0%,
+					rgba(255, 255, 255, 0) 100%
+				);
+
+				background-size: 0 100%;
+				background-repeat: no-repeat;
+				transition: 0.4s;
+
+				@include mobile {
+					padding-left: 0;
+					padding-right: 0;
+				}
+
+				img {
+					margin-right: 20px; 
+				}
+
+				h3 {
+					font-size: 25px;
+					font-weight: 600;
+					letter-spacing: 4px;
+					background-image: linear-gradient(to right, #8a2be2, #ff0000);
+					-webkit-background-clip: text;
+					background-clip: text;
+					color: transparent;
+				}
+
+				p {
+					font-size: 20px;
+				}
+
+				button {
+					background-image: linear-gradient(to right, #e27a2b, #ff0051);
+					border: none;
+					border-radius: 10px;
+					padding: 10px;
+					width: 200px;
+					height: 45px;
+					margin-right: 20px;
+					cursor: pointer;
+				}
+			}
+
+			.aboutList:hover {
+				background-size: 100% 100%;
+			}
+		}
+	}
+}
