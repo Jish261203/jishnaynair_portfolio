@@ -8,11 +8,11 @@ import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
 
+
 const App = () => {
 	return (
 		<div>
 			<Cursor />
-
 			<section id="HomePage">
 				<Navbars />
 				<Hero />

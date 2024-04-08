@@ -1,6 +1,7 @@
 import { useEffect, useMemo } from "react";
 import { Particles, initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import "./particles.scss"
 
 const ParticlesContainer = (props) => {
 	useEffect(() => {
@@ -85,7 +86,7 @@ const ParticlesContainer = (props) => {
 	);
 
 	return (
-		<div className="particles-container">
+		<div className="particles">
 			<Particles id={props.id} init={particlesLoaded} options={options} />
 		</div>
 	);
