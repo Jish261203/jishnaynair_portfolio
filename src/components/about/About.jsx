@@ -2,6 +2,17 @@
 import './about.scss'
 
 const About = () => {
+const handleResume = () => {
+	const resumeUrl =
+		"https://drive.google.com/file/d/1GK1MG5UrTDnxkQYK4gMYddOrQ_fuv8yV/view?usp=drive_link";
+	try {
+		window.open(resumeUrl, "_blank");
+	} catch (error) {
+		console.error("Error opening resume:", error);
+		alert("Sorry, we couldn't open the resume. Please try again later.");
+	}
+};
+
     return (
 			<section className="about">
 				<h2>About</h2>
@@ -33,7 +44,7 @@ const About = () => {
 							<img src="/applicant.png" alt="applicant" />
 							<div className='aboutContent'>
 								<h3>Resume</h3>
-								<button className='resumebtn'>Click here</button>
+								<button onClick={handleResume} className='resumebtn'>Click here</button>
 							</div>
 						</li>
 					</ul>

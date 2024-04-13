@@ -10,9 +10,7 @@ const Navbars = () => {
 				<motion.span
 					initial={{ opacity: 0, scale: 0.5 }}
 					animate={{ opacity: 1, scale: 1 }}
-					transition={{ duration: 0.5 }}>
-					Jishnay Nair
-				</motion.span>
+					transition={{ duration: 0.5 }}></motion.span>
 				<div className="social">
 					<motion.a
 						href="https://www.linkedin.com/in/jishnay-nair-5aa043244/"
@@ -35,7 +33,7 @@ const Navbars = () => {
 						<img src="/github.png" alt="" />
 					</motion.a>
 					<motion.a
-						href="#"
+						href="https://www.instagram.com/nair_jish?igsh=ZDYxMTRmaDFnOGM1"
 						whileHover={{ scale: 2, rotate: 360 }}
 						whileTap={{
 							scale: 0.8,
@@ -45,7 +43,7 @@ const Navbars = () => {
 						<img src="/instagram.png" alt="" />
 					</motion.a>
 					<motion.a
-						href="#"
+						href="mailto:jish261203@gmail.com"
 						whileHover={{ scale: 2, rotate: 360 }}
 						whileTap={{
 							scale: 0.8,

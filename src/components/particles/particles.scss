@@ -1,5 +1,7 @@
 @import "../../app.scss";
 
+
+
 .particles {
     position: fixed; 
     top: 0;
@@ -9,15 +11,16 @@
     z-index: 1; 
     pointer-events: none; 
 
-    /* New styles for responsiveness */
+    
+    
+
     @include mobile {
-        /* Adjust position and size for mobile screens */
-        position: absolute; /* Change from fixed to absolute */
-        width: 100vw; /* Use viewport width */
-        height: 100vh; /* Use viewport height */
-        top: auto; /* Remove top position */
-        bottom: 0; /* Position at the bottom of the viewport */
-        left: 0; /* Align to the left */
-        right: 0; /* Align to the right */
+        position: absolute; 
+        width: 100vw;
+        height: 100vh; 
+        top: auto;
+        bottom: 0; 
+        left: 0; 
+        right: 0; 
     }
 }

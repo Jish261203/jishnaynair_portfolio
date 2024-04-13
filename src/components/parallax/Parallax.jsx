@@ -34,7 +34,6 @@ const Parallax = ({ type }) => {
 	}
 	return (
 		<div className="parallax" ref={ref} style={{ background: backgroundStyle }}>
-			{/* <motion.img style={{x:imageTransform,y:imageTransform}} className="moon" src={backImage} alt="" /> */}
 			{type == "about" && (
 				<motion.img
 					style={{ x: imageTransform, y: imageTransform }}

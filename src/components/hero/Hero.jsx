@@ -50,7 +50,7 @@ const Hero = () => {
 
 	return (
 		<div className="hero">
-			<ParticlesContainer  />
+			<ParticlesContainer />
 			<div className="wrapper">
 				<motion.div
 					className="textContainer"
@@ -59,7 +59,7 @@ const Hero = () => {
 					animate="animate">
 					<motion.h2 variants={textVariants}>Jishnay Nair</motion.h2>
 					<motion.h1 variants={textVariants}>
-						Web Developer and Data Analysist
+						Web Developer & UX/UI Designer
 					</motion.h1>
 					<motion.div variants={textVariants} className="buttons">
 						<motion.button onClick={scrolltoProjects} variants={textVariants}>
