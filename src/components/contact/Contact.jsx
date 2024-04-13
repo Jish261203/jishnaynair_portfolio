@@ -50,7 +50,7 @@ const Contact = () => {
 					setError(true);
 					setTimeout(() => {
 						setError(false);
-					}, 3000); 
+					}, 3000);
 				}
 			);
 	};
