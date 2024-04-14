@@ -14,6 +14,7 @@ const Navbars = () => {
 				<div className="social">
 					<motion.a
 						href="https://www.linkedin.com/in/jishnay-nair-5aa043244/"
+						target="_blank"
 						whileHover={{ scale: 2, rotate: 360 }}
 						whileTap={{
 							scale: 0.8,
@@ -24,6 +25,7 @@ const Navbars = () => {
 					</motion.a>
 					<motion.a
 						href="https://github.com/Jish261203"
+						target="_blank"
 						whileHover={{ scale: 2, rotate: 360 }}
 						whileTap={{
 							scale: 0.8,
@@ -34,6 +36,7 @@ const Navbars = () => {
 					</motion.a>
 					<motion.a
 						href="https://www.instagram.com/nair_jish?igsh=ZDYxMTRmaDFnOGM1"
+						target="_blank"
 						whileHover={{ scale: 2, rotate: 360 }}
 						whileTap={{
 							scale: 0.8,
@@ -44,6 +47,7 @@ const Navbars = () => {
 					</motion.a>
 					<motion.a
 						href="mailto:jish261203@gmail.com"
+						target="_blank"
 						whileHover={{ scale: 2, rotate: 360 }}
 						whileTap={{
 							scale: 0.8,
