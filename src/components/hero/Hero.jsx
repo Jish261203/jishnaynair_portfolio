@@ -50,7 +50,6 @@ const Hero = () => {
 
 	return (
 		<div className="hero">
-			<ParticlesContainer />
 			<div className="wrapper">
 				<motion.div
 					className="textContainer"
@@ -79,6 +78,8 @@ const Hero = () => {
 					/>
 				</motion.div>
 			</div>
+			<ParticlesContainer />
+
 			<div className="imageContainer">
 				<img src="/hero1.png" alt="" />
 			</div>
