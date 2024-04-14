@@ -4,7 +4,7 @@ import Contact from "./components/contact/Contact";
 import Cursor from "./components/cursor/Cursor";
 import Hero from "./components/hero/Hero";
 import Navbars from "./components/navbar/Navbars";
-import Parallax from "./components/parallax/Parallax";
+// import Parallax from "./components/parallax/Parallax";
 import Portfolio from "./components/portfolio/Portfolio";
 import Skills from "./components/skills/Skills";
 
@@ -17,21 +17,21 @@ const App = () => {
 				<Navbars />
 				<Hero />
 			</section>
-			<section>
+			{/* <section>
 				<Parallax type="about" />
-			</section>
+			</section> */}
 			<section id="About">
 				<About />
 			</section>
-			<section>
+			{/* <section>
 				<Parallax type="skills" />
-			</section>
+			</section> */}
 			<section id="Skills">
 				<Skills />
 			</section>
-			<section>
+			{/* <section>
 				<Parallax type="portfolio" />
-			</section>
+			</section> */}
 			<Portfolio />
 			<section id="Contact">
 				<Contact />
