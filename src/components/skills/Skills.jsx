@@ -13,7 +13,7 @@ const Skills = () => {
 						Skills <span> & </span>
 						Technologies
 					</h1>
-					<p> Driving Progress with Expertise in Emerging Technologies</p>
+					<p>Driving Progress with Expertise in Emerging Technologies</p>
 				</div>
 				<Swiper
 					slidesPerView={5}
@@ -23,8 +23,30 @@ const Skills = () => {
 						disableOnInteraction: false,
 					}}
 					speed={6000}
-					modules={[Autoplay ]}
-					className="slider">
+					modules={[Autoplay]}
+					className="slider"
+					breakpoints={{
+						320: {
+							slidesPerView: 1,
+							spaceBetween: 10,
+						},
+						480: {
+							slidesPerView: 2,
+							spaceBetween: 20,
+						},
+						640: {
+							slidesPerView: 3,
+							spaceBetween: 30,
+						},
+						768: {
+							slidesPerView: 4,
+							spaceBetween: 40,
+						},
+						1024: {
+							slidesPerView: 5,
+							spaceBetween: 50,
+						},
+					}}>
 					{SkillsData.map((skill, index) => (
 						<SwiperSlide key={index}>
 							<img
@@ -42,12 +64,34 @@ const Skills = () => {
 					loop={true}
 					autoplay={{
 						delay: 0,
-                        disableOnInteraction: false,
-                        reverseDirection: true
+						disableOnInteraction: false,
+						reverseDirection: true,
 					}}
 					speed={6000}
 					modules={[Autoplay]}
-					className="slider">
+					className="slider"
+					breakpoints={{
+						320: {
+							slidesPerView: 1,
+							spaceBetween: 10,
+						},
+						480: {
+							slidesPerView: 2,
+							spaceBetween: 20,
+						},
+						640: {
+							slidesPerView: 3,
+							spaceBetween: 30,
+						},
+						768: {
+							slidesPerView: 4,
+							spaceBetween: 40,
+						},
+						1024: {
+							slidesPerView: 5,
+							spaceBetween: 50,
+						},
+					}}>
 					{SkillsData.map((skill, index) => (
 						<SwiperSlide key={index}>
 							<img

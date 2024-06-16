@@ -81,7 +81,7 @@ const Hero = () => {
 			<ParticlesContainer />
 
 			<div className="imageContainer">
-				<img src="/hero1.png" alt="" />
+				<img src="hero1.png" alt="" />
 			</div>
 		</div>
 	);

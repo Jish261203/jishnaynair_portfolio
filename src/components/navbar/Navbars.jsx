@@ -35,7 +35,7 @@ const Navbars = () => {
 						<img src="/github.png" alt="" />
 					</motion.a>
 					<motion.a
-						href="https://www.instagram.com/nair_jish?igsh=ZDYxMTRmaDFnOGM1"
+						href="https://leetcode.com/u/jish261203/"
 						target="_blank"
 						whileHover={{ scale: 2, rotate: 360 }}
 						whileTap={{
@@ -43,7 +43,7 @@ const Navbars = () => {
 							rotate: -360,
 							borderRadius: "100%",
 						}}>
-						<img src="/instagram.png" alt="" />
+						<img src="/icons/leetcode.svg" alt="" />
 					</motion.a>
 					<motion.a
 						href="mailto:jish261203@gmail.com"

@@ -1,4 +1,4 @@
-// @import "../../app.scss";
+@import "../../app.scss";
 
 .about {
 	position: relative;
@@ -9,11 +9,12 @@
 	margin-left: 10%;
 	margin-right: 10%;
 
-	// @include mobile {
-	// 	background-color: transparent;
-	// 	padding-left: 0;
-	// 	padding-right: 0;
-	// }
+	@include mobile {
+		background-color: transparent;
+		padding: 20px; /* Adjust padding for better responsiveness */
+		margin-left: 0;
+		margin-right: 0;
+	}
 
 	h2 {
 		background-image: linear-gradient(to right, #e27a2b, #ff0051);
@@ -23,8 +24,11 @@
 		font-size: 45px;
 		font-weight: 700;
 		letter-spacing: 1.75px;
-	
 		text-align: center;
+
+		@include mobile {
+			font-size: 30px; /* Adjusted font size for better responsiveness */
+		}
 	}
 
 	.content {
@@ -32,12 +36,16 @@
 		flex-direction: row;
 		align-items: center;
 
-		// @include mobile {
-		// 	flex-direction: column;
-		// }
+		@include mobile {
+			flex-direction: column;
+		}
 
 		.aboutImage {
 			width: 35%;
+
+			@include mobile {
+				display: none; /* Hide image on mobile screens */
+			}
 		}
 
 		.aboutItems {
@@ -46,9 +54,10 @@
 			flex-direction: column;
 			gap: 50px;
 
-			// @include mobile {
-			// 	margin-top: 29px;
-			// }
+			@include mobile {
+				margin-top: 20px; /* Adjust margin for better responsiveness */
+				gap: 20px; /* Adjust gap for better responsiveness */
+			}
 
 			.aboutList {
 				display: flex;
@@ -62,18 +71,22 @@
 					rgba(165, 215, 232, 0.42) 0%,
 					rgba(255, 255, 255, 0) 100%
 				);
-
 				background-size: 0 100%;
 				background-repeat: no-repeat;
 				transition: 0.4s;
 
-				// @include mobile {
-				// 	padding-left: 0;
-				// 	padding-right: 0;
-				// }
+				@include mobile {
+					padding: 15px; /* Adjust padding for better responsiveness */
+					flex-direction: column;
+					text-align: center; /* Center align text for better responsiveness */
+				}
 
 				img {
-					margin-right: 20px; 
+					margin-right: 20px;
+
+					@include mobile {
+						margin: 0 0 10px 0; /* Adjust margin for better responsiveness */
+					}
 				}
 
 				h3 {
@@ -84,10 +97,18 @@
 					-webkit-background-clip: text;
 					background-clip: text;
 					color: transparent;
+
+					@include mobile {
+						font-size: 20px; /* Adjust font size for better responsiveness */
+					}
 				}
 
 				p {
 					font-size: 20px;
+
+					@include mobile {
+						font-size: 16px; /* Adjust font size for better responsiveness */
+					}
 				}
 
 				button {
@@ -99,6 +120,10 @@
 					height: 45px;
 					margin-right: 20px;
 					cursor: pointer;
+
+					@include mobile {
+						margin: 10px 0 0 0; /* Adjust margin for better responsiveness */
+					}
 				}
 			}
 

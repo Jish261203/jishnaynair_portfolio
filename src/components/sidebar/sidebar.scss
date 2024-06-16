@@ -1,28 +1,28 @@
-// @import "../../app.scss";
+@import "../../app.scss";
 
-.sidebar{
+.sidebar {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: white;
     color: black;
-    
 
-    .bg{
+    .bg {
         z-index: 999;
-        position:fixed;
+        position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
         width: 300px;
         background: white;
+        overflow: hidden; /* Ensure links are not visible initially */
 
-        //         @include mobile{
-        //     width: 200px;
-        // }
+        @include mobile {
+            width: 200px;
+        }
 
-        .links{
+        .links {
             position: absolute;
             width: 100%;
             height: 100%;
@@ -31,18 +31,26 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
+            padding: 20px; /* Add some padding for better spacing */
 
-            a{
-                font-size: 40px;
+            a {
+                font-size: 24px; /* Adjust font size */
+                color: #333; /* Change link color */
+                text-decoration: none;
+                transition: color 0.3s ease; /* Smooth color transition */
 
-        //                         @include mobile{
-        //     font-size: 20px;
-        // }
+                &:hover {
+                    color: #e27a2b; /* Change color on hover */
+                }
+
+                @include mobile {
+                    font-size: 18px; /* Adjust font size for mobile */
+                }
             }
         }
     }
 
-    button{
+    button {
         z-index: 999;
         width: 50px;
         height: 50px;
@@ -52,6 +60,12 @@
         left: 25px;
         background-color: transparent;
         border: none;
-        cursor:pointer;
+        cursor: pointer;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add shadow for depth effect */
+        transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+
+        &:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+        }
     }
 }

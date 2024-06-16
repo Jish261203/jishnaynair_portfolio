@@ -1,4 +1,4 @@
-// @import "../../app.scss";
+@import "../../app.scss";
 
 .hero {
 	height: calc(100vh - 100px);
@@ -12,7 +12,7 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		opacity: 0.5; // Adjust the opacity as needed
+		opacity:0.5; // Adjust the opacity as needed
 	}
 
 	.wrapper {
@@ -28,13 +28,13 @@
 			justify-content: center;
 			gap: 40px;
 
-			// @include mobile {
-			// 	width: 100%;
-			// 	height: 50%;
-			// 	gap: 20px;
-			// 	align-items: center;
-			// 	text-align: center;
-			// }
+			@include mobile {
+				width: 100%;
+				height: 50%;
+				gap: 20px;
+				align-items: center;
+				text-align: center;
+			}
 
 			h2 {
 				font-size: 30px;
@@ -45,9 +45,9 @@
 			h1 {
 				font-size: 88px;
 
-				// @include mobile {
-				// 	font-size: 36px;
-				// }
+				@include mobile {
+					font-size: 36px;
+				}
 			}
 
 			.buttons {
@@ -64,7 +64,9 @@
 			}
 
 			img {
-				width: 50px;
+				width: 70px;
+				
+			
 			}
 		}
 	}
@@ -75,17 +77,17 @@
 		top: 0;
 		right: 0;
 
-		// @include mobile {
-		// 	width: 100%;
-		// 	height: 50%;
-        //     bottom: 0;
-        //     top: unset;
+		@include mobile {
+			width: 100%;
+			height: 50%;
+            bottom: 0;
+            top: unset;
 
-        //     img{
-        //         width: 100%;
-        //         height: 100%;
-        //         object-fit: contain;
-        //     }
-		// }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+		}
 	}
 }
