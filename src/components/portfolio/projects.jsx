@@ -19,7 +19,6 @@ export const Projects = [
 				width: 60,
 				height: 60,
 			},
-
 		],
 	},
 	{
@@ -37,6 +36,40 @@ export const Projects = [
 				height: 60,
 			},
 			{
+				name: "Tailwind-css",
+				img: "/icons/tailwindicon.svg",
+				width: 60,
+				height: 60,
+			},
+			{
+				name: "MongoDB",
+				img: "/icons/mongodb.svg",
+				width: 60,
+				height: 60,
+			},
+			{
+				name: "Stripe",
+				img: "/icons/stripe.svg",
+				width: 60,
+				height: 60,
+			},
+		],
+	},
+	{
+		id: 3,
+		title: "Twitter Clone",
+		image: "/twitter_clone.png",
+		desc: "I developed a Twitter clone using React, Nodejs, Express, and MongoDB, with Tailwind CSS for responsive design. Implemented JWT-based authentication for secure user login and authorization. Key features include posting, liking, commenting, and deleting posts to enhance user engagement. Leveraged React Query for efficient data management and caching, ensuring optimal performance. Integrated Cloudinary for multimedia uploads, allowing users to customize profile and cover images. ",
+		liveDemo: "https://twitter-clone-z7rx.onrender.com/",
+		github: "https://github.com/Jish261203/twitter_clone",
+		icons: [
+			{
+				name: "ReactJs",
+				img: "/icons/reacticon.svg",
+				width: 60,
+				height: 60,
+			},
+			{
 				name: "NodeJs",
 				img: "/icons/nodejsicon.svg",
 				width: 60,
@@ -49,8 +82,8 @@ export const Projects = [
 				height: 60,
 			},
 			{
-				name: "Stripe",
-				img: "/icons/stripe.svg",
+				name: "MongoDB",
+				img: "/icons/mongodb.svg",
 				width: 60,
 				height: 60,
 			},
