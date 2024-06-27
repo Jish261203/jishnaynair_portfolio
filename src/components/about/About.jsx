@@ -2,9 +2,8 @@
 import "./about.scss";
 
 const About = () => {
-	const handleResume = () => {
-		const resumeUrl =
-			"https://drive.google.com/file/d/1zMSbV53JEtPlkZV9ESC0AKn5v0pGDx6A/view?usp=drive_link";
+	const 	handleResume = () => {
+		const resumeUrl = import.meta.env.REACT_APP_RESUME_URL;
 		try {
 			window.open(resumeUrl, "_blank");
 		} catch (error) {
