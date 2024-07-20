@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import "./hero.scss";
 import ParticlesContainer from "../particles/ParticlesContainer";
 
+
 const textVariants = {
     intial: {
         x: -500,
@@ -81,7 +82,7 @@ const Hero = () => {
 			<ParticlesContainer />
 
 			<div className="imageContainer">
-				<img src="hero1.png" alt="" />
+				<img src="avatar.png" alt="" />
 			</div>
 		</div>
 	);

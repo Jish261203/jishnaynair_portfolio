@@ -74,8 +74,8 @@
 	.imageContainer {
 		height: 100%;
 		position: absolute;
-		top: 0;
-		right: 0;
+		top: 130px;
+		right: 130px;
 
 		@include mobile {
 			width: 100%;
