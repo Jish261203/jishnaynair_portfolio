@@ -2,45 +2,43 @@ import { motion } from "framer-motion";
 import "./hero.scss";
 import ParticlesContainer from "../particles/ParticlesContainer";
 
-
 const textVariants = {
-    intial: {
-        x: -500,
-        opacity: 0,
-    },
-    animate: {
-        x: 0,
-        opacity: 1,
-        transition: {
-            duration: 1,
-            staggerChildren: 0.1,
-        },
-    },
+	intial: {
+		x: -500,
+		opacity: 0,
+	},
+	animate: {
+		x: 0,
+		opacity: 1,
+		transition: {
+			duration: 1,
+			staggerChildren: 0.1,
+		},
+	},
 
-    scrollButton: {
-        opacity: 0,
-        y: 10,
-        transition: {
-            duration: 2,
-            repeat:Infinity
-        }
-    }
+	scrollButton: {
+		opacity: 0,
+		y: 10,
+		transition: {
+			duration: 2,
+			repeat: Infinity,
+		},
+	},
 };
 
-const Hero = () => {	
-
+const Hero = () => {
 	const scrolltoProjects = () => {
 		const projectSection = document.getElementById("Portfolio");
 		if (projectSection) {
-			projectSection.scrollIntoView({behavior:"smooth"})
+			projectSection.scrollIntoView({ behavior: "smooth" });
 		}
-	}
+	};
 	const scrolltoAbout = () => {
 		const aboutSection = document.getElementById("About");
 		if (aboutSection) {
-			aboutSection.scrollIntoView({behavior:"smooth"})
+			aboutSection.scrollIntoView({ behavior: "smooth" });
 		}
-	}
+	};
 
 	const scrollToContact = () => {
 		const contactSection = document.getElementById("Contact");
@@ -82,7 +80,7 @@ const Hero = () => {
 			<ParticlesContainer />
 
 			<div className="imageContainer">
-				<img src="avatar.png" alt="" />
+				<img src="hero.svg" alt="" />
 			</div>
 		</div>
 	);
