@@ -89,5 +89,45 @@ export const Projects = [
 			},
 		],
 	},
+	{
+		id: 4,
+		title: "Expense Tracker",
+		image: "/expense_tracker.png",
+		desc: "A expense tracking app built using MERN and Apollo GraphQL. It features authentication with Passport.js, global state management with Apollo Client, and robust error handling. The app also supports automated tasks through cron jobs and is deployed on Render for seamless access. ",
+		liveDemo: "https://expense-tracker-adnn.onrender.com/",
+		github: "https://github.com/Jish261203/expense-tracker",
+		icons: [
+			{
+				name: "ReactJs",
+				img: "/icons/reacticon.svg",
+				width: 60,
+				height: 60,
+			},
+			{
+				name: "NodeJs",
+				img: "/icons/nodejsicon.svg",
+				width: 60,
+				height: 60,
+			},
+			{
+				name: "Tailwind-css",
+				img: "/icons/tailwindicon.svg",
+				width: 60,
+				height: 60,
+			},
+			{
+				name: "MongoDB",
+				img: "/icons/mongodb.svg",
+				width: 60,
+				height: 60,
+			},
+			{
+				name: "GraphQL",
+				img: "/icons/graphql.svg",
+				width: 60,
+				height: 60,
+			},
+		],
+	},
 ];
 
