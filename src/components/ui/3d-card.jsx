@@ -3,30 +3,52 @@ import { cn } from "@/lib/utils";
 import { createContext, useState, useRef, useEffect } from "react";
 import { useMouseEnter } from "./useMouseEnter";
 
-const MouseEnterContext = createContext(undefined);
+export const MouseEnterContext = createContext(undefined);
 
 export const CardContainer = ({ children, className, containerClassName }) => {
 	const containerRef = useRef(null);
 	const [isMouseEntered, setIsMouseEntered] = useState(false);
+	const [shadow, setShadow] = useState('0px 8px 32px rgba(0,0,0,0.15)');
 
 	const handleMouseMove = (e) => {
 		if (!containerRef.current) return;
 		const { left, top, width, height } =
 			containerRef.current.getBoundingClientRect();
-		const x = (e.clientX - left - width / 2) / 25;
-		const y = (e.clientY - top - height / 2) / 25;
-		containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg)`;
+		// Dramatic 3D: increase divisor for more tilt
+		const x = (e.clientX - left - width / 2) / 8;
+		const y = (e.clientY - top - height / 2) / 8;
+		containerRef.current.style.transform = `rotateY(${x}deg) rotateX(${y}deg) scale(1.07)`;
+
+		// Dynamic shadow
+		const shadowX = -x * 2;
+		const shadowY = -y * 2;
+		setShadow(`${shadowX}px ${40 + shadowY}px 60px 0px rgba(0,0,0,0.25)`);
+
+		// Glare effect
+		const glare = containerRef.current.querySelector('.glare');
+		if (glare) {
+			const px = ((e.clientX - left) / width) * 100;
+			const py = ((e.clientY - top) / height) * 100;
+			glare.style.setProperty('--glare-x', `${px}%`);
+			glare.style.setProperty('--glare-y', `${py}%`);
+			glare.style.opacity = '1';
+		}
 	};
 
 	const handleMouseEnter = () => {
 		setIsMouseEntered(true);
 		if (!containerRef.current) return;
+		containerRef.current.style.transition = 'transform 0.15s cubic-bezier(.17,.67,.83,.67)';
 	};
 
 	const handleMouseLeave = () => {
 		if (!containerRef.current) return;
 		setIsMouseEntered(false);
-		containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg)`;
+		containerRef.current.style.transform = `rotateY(0deg) rotateX(0deg) scale(1)`;
+		containerRef.current.style.transition = 'transform 0.35s cubic-bezier(.17,.67,.83,.67)';
+		setShadow('0px 8px 32px rgba(0,0,0,0.15)');
+		const glare = containerRef.current.querySelector('.glare');
+		if (glare) glare.style.opacity = '0.5';
 	};
 	return (
 		<MouseEnterContext.Provider value={[isMouseEntered, setIsMouseEntered]}>
@@ -36,7 +58,7 @@ export const CardContainer = ({ children, className, containerClassName }) => {
 					containerClassName
 				)}
 				style={{
-					perspective: "1000px",
+					perspective: "1200px",
 				}}>
 				<div
 					ref={containerRef}
@@ -49,6 +71,7 @@ export const CardContainer = ({ children, className, containerClassName }) => {
 					)}
 					style={{
 						transformStyle: "preserve-3d",
+						boxShadow: shadow,
 					}}>
 					{children}
 				</div>
@@ -61,10 +84,11 @@ export const CardBody = ({ children, className }) => {
 	return (
 		<div
 			className={cn(
-				"h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d]",
+				"h-96 w-96 [transform-style:preserve-3d]  [&>*]:[transform-style:preserve-3d] relative overflow-hidden",
 				className
 			)}>
 			{children}
+			<div className="glare" />
 		</div>
 	);
 };
