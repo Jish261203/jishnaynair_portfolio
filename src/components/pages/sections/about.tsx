@@ -31,7 +31,7 @@ const About = () => {
           <div className="text-foreground/70 bg-muted/20 relative z-10 mx-auto mt-6 max-w-3xl rounded-lg border-2 border-dotted text-sm leading-relaxed backdrop-blur-3xl md:text-base">
             <div className="p-6">
               <p className="">
-                I build fast, friendly products that make users smile
+                I build fast, user-friendly products that feel smooth
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 rotate-6 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -41,12 +41,12 @@ const About = () => {
                     />
                   </span>
                 </span>
-                —and sometimes their dogs too.
+                —and easy to love.
               </p>
 
               <p className="">
-                Stack: Next.js, React, TypeScript, Tailwind. Clean APIs, tiny
-                micro‑interactions, big delight
+                Stack: Next.js, React, TypeScript, Tailwind. Focused on clean
+                APIs, subtle interactions, and thoughtful UX details.
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 -rotate-3 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -60,7 +60,8 @@ const About = () => {
               </p>
 
               <p className="">
-                Off‑duty: coffee, sketching animations, and One Piece marathons
+                Off-duty: sports, gaming sessions, exploring bikes & cars, and
+                late-night anime binges.
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 rotate-3 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -74,8 +75,8 @@ const About = () => {
               </p>
 
               <p className="">
-                Best in small teams: quick loops, clear comms, high‑fives after
-                deploy
+                I enjoy collaborative teams, quick feedback cycles, and
+                celebrating smooth deploys together.
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 -rotate-2 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -91,7 +92,7 @@ const About = () => {
               </p>
 
               <p>
-                Got a messy brief or a half‑baked idea?
+                Got a rough idea or unclear brief?
                 <span className="mx-1 inline-block align-middle">
                   <span className="ring-offset-background relative inline-block w-12 rotate-2 overflow-hidden rounded-md ring ring-offset-2">
                     <img
@@ -101,7 +102,7 @@ const About = () => {
                     />
                   </span>
                 </span>
-                Let’s turn it into something real.
+                Let’s shape it into something solid.
               </p>
             </div>
 
