@@ -1,42 +1,104 @@
-# My Portfolio Website
+# Stark's Portfolio
 
-Welcome to my portfolio website! This project serves as a comprehensive showcase of my skills, projects, and professional background.
+![Portfolio Screenshot](public/projects/portfolio-screenshot.png)
 
-## Table of Contents
+A modern, interactive **[developer portfolio](https://next-portfolio-stark.vercel.app)** built with **Next.js 15**, **Prisma**, and **shadcn/ui**
 
-- [Home](#home)
-- [About](#about)
-- [Skills](#skills)
-- [Portfolio](#portfolio)
-- [Contact](#contact)
-- [Technologies Used](#technologies-used)
+> This portfolio showcases my work, my projects, and my personality
 
-## Home
+---
 
-The home page offers a concise overview of my skills and services, guiding visitors to explore further sections such as my portfolio and contact information.
+## Tech Stack
 
-## About 
+**Framework & Runtime**
 
-The about page introduces me and provides a link to download my resume. It offers visitors deeper insights into my background, skills, and professional journey.
+- [Next.js 15](https://nextjs.org/) — UI Framework
+- [TypeScript 5](https://www.typescriptlang.org/) — For type safety
 
-## Skills
+**Styling & UI**
 
-This section provides a comprehensive list of the skills and technologies I am proficient in, giving visitors a clear understanding of my expertise.
+- [Tailwind CSS 4](https://tailwindcss.com/) — For Styling
+- [shadcn/ui](https://ui.shadcn.com/) — for accessible components
+- [Lucide Icons](https://lucide.dev/) — for Icon
+- [Framer Motion (motion)](https://motion.dev/) — for animation
 
-## Portfolio
+**Backend & Data**
 
-The portfolio page showcases a selection of my completed projects, each accompanied by a brief description and links for further exploration, including live demos where applicable.
+- [Prisma ORM 6](https://www.prisma.io/)
+- [Better Auth](https://better-auth.dev/)
+- [Zod](https://zod.dev/) — for runtime schema validation
+- [Umami](https://umami.is/) — Analytics
 
-## Contact
+**State & Utilities**
 
-The contact page provides visitors with the means to reach out to me for hiring or freelancing opportunities. Whether through a form or direct contact information, communication is made effortless.
+- [Zustand](https://github.com/pmndrs/zustand)
+- [TanStack Query](https://tanstack.com/query)
+- [Day.js](https://day.js.org/)
+- [Lodash](https://lodash.com/)
 
-## Technologies Used
+---
 
-- **React.js:** Utilized for building the website, enabling the creation of reusable components and efficient state management.
-- **Sass:** Employed for styling the website, ensuring a structured and maintainable CSS codebase for enhanced design flexibility.
-- **Framer Motion:** Integrated to introduce captivating effects and animations throughout the project, elevating the user experience to new heights.
+## Run Project Locally
 
-## License
+### Clone the repository
 
-[MIT License](LICENSE)
+```bash
+git clone https://github.com/NotStark/portfolio.git
+cd portfolio
+```
+
+### Install dependencies
+
+```bash
+npm install
+```
+
+### Set up environment variables
+
+Create a `.env` & copy the variables from `.env.example` file in the root and configure it.
+
+### Generate Prisma Client
+
+```bash
+npx prisma generate
+```
+
+### Run the development server
+
+```bash
+npm run dev
+```
+
+> Your portfolio should now be live at **[https://jishnaynair-portfolio.vercel.app](https://jishnaynair-portfolio.vercel.app)** 🎉
+
+---
+
+## Deployment
+
+Deployed easily via [Vercel](https://vercel.com/) (recommended).
+
+1. Connect your GitHub repository.
+2. Add your environment variables in the Vercel dashboard.
+3. Deploy → done!
+
+---
+
+## Connect With Me
+
+| Platform    | Link                                                               |
+| ----------- | ------------------------------------------------------------------ | --- |
+| 💬 Telegram | [https://t.me/EternalVortex](https://t.me/EternalVortex)           |
+| 🐦 Twitter  | [https://twitter.com/NotStark101](https://twitter.com/NotStark101) |     |
+| 💻 Discord  | `_notstark`                                                        |
+
+---
+
+## Star History
+
+**⭐ If you liked this project, give it a star — it helps a lot!**
+<picture>
+
+  <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=Notstark/Portfolio&type=Date&theme=dark" />
+  <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=Notstark/Portfolio&type=Date" />
+  <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=Notstark/Portfolio&type=Date" />
+</picture>

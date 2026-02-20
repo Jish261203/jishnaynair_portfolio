@@ -1,0 +1,81 @@
+/* Pixelated border via border-image (uses CSS vars) */
+.pixel-border {
+  border-style: solid;
+  border-width: 4px;
+  border-image-slice: 3;
+  border-image-width: 3;
+  border-image-repeat: stretch;
+  border-image-source: var(--bubble-border-image);
+  border-image-outset: 2;
+}
+
+/* Balloon tail using pseudo-elements (uses CSS vars) */
+.bubble-tail::before,
+.bubble-tail::after {
+  position: absolute;
+  content: "";
+}
+
+/* Left tail position */
+.bubble-tail[data-direction="left"]::before,
+.bubble-tail[data-direction="left"]::after {
+  left: 2rem;
+}
+
+/* Right tail position */
+.bubble-tail[data-direction="right"]::before,
+.bubble-tail[data-direction="right"]::after {
+  right: 2rem;
+}
+
+/* Left tail shapes */
+.bubble-tail[data-direction="left"]::before {
+  bottom: -14px;
+  width: 26px;
+  height: 10px;
+  background-color: var(--bubble-bg-color, #ffffff);
+  border-right: 4px solid var(--bubble-border-color, #000000);
+  border-left: 4px solid var(--bubble-border-color, #000000);
+}
+
+.bubble-tail[data-direction="left"]::after {
+  bottom: -18px;
+  width: 18px;
+  height: 4px;
+  margin-right: 8px;
+  background-color: var(--bubble-bg-color, #ffffff);
+  box-shadow:
+    -4px 0 var(--bubble-border-color, #000000),
+    4px 0 var(--bubble-border-color, #000000),
+    -4px 4px var(--bubble-bg-color, #ffffff),
+    0 4px var(--bubble-border-color, #000000),
+    -8px 4px var(--bubble-border-color, #000000),
+    -4px 8px var(--bubble-border-color, #000000),
+    -8px 8px var(--bubble-border-color, #000000);
+}
+
+/* Right tail shapes */
+.bubble-tail[data-direction="right"]::before {
+  bottom: -14px;
+  width: 26px;
+  height: 10px;
+  background-color: var(--bubble-bg-color, #ffffff);
+  border-right: 4px solid var(--bubble-border-color, #000000);
+  border-left: 4px solid var(--bubble-border-color, #000000);
+}
+
+.bubble-tail[data-direction="right"]::after {
+  bottom: -18px;
+  width: 18px;
+  height: 4px;
+  margin-left: 8px;
+  background-color: var(--bubble-bg-color, #ffffff);
+  box-shadow:
+    -4px 0 var(--bubble-border-color, #000000),
+    4px 0 var(--bubble-border-color, #000000),
+    4px 4px var(--bubble-bg-color, #ffffff),
+    0 4px var(--bubble-border-color, #000000),
+    8px 4px var(--bubble-border-color, #000000),
+    4px 8px var(--bubble-border-color, #000000),
+    8px 8px var(--bubble-border-color, #000000);
+}
