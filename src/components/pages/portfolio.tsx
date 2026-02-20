@@ -8,7 +8,7 @@ import About from "./sections/about";
 import Footer from "./sections/footer";
 import Contact from "./sections/contact";
 import Stats from "./sections/stats";
-import { Testimonials } from "./sections/testimonials";
+// import { Testimonials } from "./sections/testimonials";
 import WorkExperience from "./sections/work-experience";
 import { Guestbook } from "../feature/guestbook";
 
@@ -35,7 +35,7 @@ const PortfolioPage = () => {
               <Projects />
               <About />
               <Stats />
-              <Testimonials />
+              {/* <Testimonials /> */}
               <Contact />
               <Footer />
             </div>

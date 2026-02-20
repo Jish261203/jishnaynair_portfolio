@@ -55,10 +55,10 @@ const Profile: React.FC = () => {
                 style={{ left: `-${col * 100}%`, top: `-${row * 100}%` }}
               >
                 <Image
-                  src="/jish_profile.webp"
+                  src="/jishnay_profile.webp"
                   alt="Profile"
                   fill
-                  className="object-cover"
+                  className="scale-x-99 object-cover object-[center_25%]"
                   priority
                 />
               </div>
