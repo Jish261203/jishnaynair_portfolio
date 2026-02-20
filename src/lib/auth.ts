@@ -14,7 +14,7 @@ export const auth = betterAuth({
   trustedOrigins: [baseUrl],
 
   database: prismaAdapter(prisma, {
-    provider: "postgresql",
+    provider: "mysql",
   }),
 
   session: {
@@ -35,6 +35,17 @@ export const auth = betterAuth({
       clientId: env.GOOGLE_CLIENT_ID,
       clientSecret: env.GOOGLE_CLIENT_SECRET,
     },
+  },
+
+  // Handle OAuth cancellations gracefully
+  onError: async (context: any) => {
+    // Redirect home on access denied (when user clicks Cancel on OAuth)
+    if (
+      context.error.status === 401 ||
+      context.error.message === "access_denied"
+    ) {
+      context.res.redirect("/");
+    }
   },
 
   plugins: [
