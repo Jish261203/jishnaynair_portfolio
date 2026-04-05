@@ -53,9 +53,9 @@ model Account {
   userId                String
   user                  User      @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  accessToken           String?
-  refreshToken          String?
-  idToken               String?
+  accessToken           String?   @db.Text
+  refreshToken          String?   @db.Text
+  idToken               String?   @db.Text
   scope                 String?   @db.Text
   password              String?   @db.Text
 
@@ -71,7 +71,7 @@ model Account {
 model Verification {
   id         String   @id
   identifier String
-  value      String
+  value      String   @db.Text
   expiresAt  DateTime
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
