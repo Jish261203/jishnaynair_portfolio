@@ -4,6 +4,7 @@ import { IntroSplash } from "../shared/intro-splash";
 import Navbar from "./sections/navbar";
 import Hero from "./sections/hero";
 import Projects from "./sections/projects";
+import ClientWork from "./sections/client-work";
 import About from "./sections/about";
 import Footer from "./sections/footer";
 import Contact from "./sections/contact";
@@ -32,6 +33,7 @@ const PortfolioPage = () => {
             <div className="min-h-[calc(100vh-4rem)] md:border-r md:border-l">
               <Hero />
               <WorkExperience />
+              <ClientWork />
               <Projects />
               <About />
               <Stats />
